@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+tensorflow
+torch
+sqlalchemy
+psycopg2
+alpha_vantage
+alembic

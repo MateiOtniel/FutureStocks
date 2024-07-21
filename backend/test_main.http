@@ -1,11 +1,41 @@
 # Test your FastAPI endpoints
+### Antrenare model de regresie liniară
+POST http://127.0.0.1:8000/linear_regression/train
+Content-Type: application/json
 
-GET http://127.0.0.1:8000/
-Accept: application/json
+{
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "FB",
+    "TSLA",
+    "BRK.B",
+    "JNJ",
+    "V",
+    "WMT",
+    "JPM",
+    "MA",
+    "PG",
+    "NVDA",
+    "HD",
+    "DIS",
+    "PYPL",
+    "VZ",
+    "ADBE",
+    "NFLX"
+  ]
+}
 
-###
 
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
+### Predicție model de regresie liniară
+POST http://127.0.0.1:8000/linear_regression/predict
+Content-Type: application/json
 
-###
+{
+  "ticker": "MSFT",
+  "start_date": "2020-01-01",
+  "end_date": "2023-01-01"
+}
+
