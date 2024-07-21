@@ -2,7 +2,7 @@
 
 ## Proiect de Predicție a Prețului Acțiunilor folosind Inteligența Artificială
 
-Acest proiect își propune să prezică prețul unei acțiuni pe baza istoricului său utilizând inteligența artificială. Urmărește pașii de mai jos pentru a structura proiectul de la colectarea datelor până la evaluarea modelului de predicție.
+Acest proiect are ca scop prezicerea prețului unei acțiuni pe baza istoricului său utilizând inteligența artificială. Pașii de mai jos oferă o structură pentru proiect, de la colectarea datelor până la evaluarea modelului de predicție.
 
 ### Pasul 1: Definirea Problemei
 1. **Stabilirea Obiectivelor**:
@@ -11,25 +11,23 @@ Acest proiect își propune să prezică prețul unei acțiuni pe baza istoricul
 
 ### Pasul 2: Colectarea și Preprocesarea Datelor
 1. **Colectarea Datelor**:
-   - Obține date istorice ale prețurilor acțiunilor (open, high, low, close) și volumul de tranzacționare. Poți folosi API-uri financiare cum ar fi Yahoo Finance, Alpha Vantage, sau alte surse.
-   - Date suplimentare: indicatori tehnici, știri financiare, factori macroeconomici (opțional).
+   - Obținerea datelor istorice ale prețurilor acțiunilor (open, high, low, close) și volumul de tranzacționare utilizând API-uri financiare precum Yahoo Finance, Alpha Vantage sau alte surse.
+   - Colectarea datelor suplimentare: indicatori tehnici, știri financiare, factori macroeconomici (opțional).
 
 2. **Preprocesarea Datelor**:
    - Curățarea datelor: gestionarea valorilor lipsă, corectarea anomaliilor.
-   - Normalizarea/standardizarea datelor pentru a îmbunătăți performanța modelului.
+   - Normalizarea/standardizarea datelor pentru îmbunătățirea performanței modelului.
 
 ### Pasul 3: Explorarea și Vizualizarea Datelor
 1. **Analiza Exploratorie a Datelor (EDA)**:
-   - Utilizarea unor grafice pentru a vizualiza datele istorice ale prețurilor (grafice de tip linie, histogramă, etc.).
+   - Utilizarea grafice pentru vizualizarea datelor istorice ale prețurilor (grafice de tip linie, histogramă, etc.).
    - Calcularea și vizualizarea indicatorilor tehnici (de ex. media mobilă, RSI, MACD).
 
 ### Pasul 4: Dezvoltarea Modelului de Predicție
 1. **Alegerea și Construirea Modelului**:
-   - **Modele de Machine Learning**:
-     - Regresie liniară, ARIMA, modele de regresie complexă.
-   - **Modele de Deep Learning**:
-     - RNN (Recurrent Neural Networks), LSTM (Long Short-Term Memory), GRU (Gated Recurrent Units).
-   - Utilizarea librăriilor cum ar fi Scikit-Learn, TensorFlow, Keras, PyTorch.
+   - **Modele de Machine Learning**: Regresie liniară, ARIMA, modele de regresie complexă.
+   - **Modele de Deep Learning**: RNN (Recurrent Neural Networks), LSTM (Long Short-Term Memory), GRU (Gated Recurrent Units).
+   - Utilizarea librăriilor precum Scikit-Learn, TensorFlow, Keras, PyTorch.
 
 2. **Antrenarea Modelului**:
    - Separarea datelor în seturi de antrenament și de testare.
@@ -42,35 +40,33 @@ Acest proiect își propune să prezică prețul unei acțiuni pe baza istoricul
    - Vizualizarea predicțiilor comparativ cu datele reale.
 
 2. **Îmbunătățirea Modelului**:
-   - Îmbunătățirea modelului prin ajustarea parametrilor, adăugarea de noi funcții, sau utilizarea unor modele mai avansate.
+   - Ajustarea parametrilor, adăugarea de noi funcții sau utilizarea unor modele mai avansate pentru îmbunătățirea modelului.
 
 ### Pasul 6: Implementarea și Integrarea Modelului
 1. **Implementarea Modelului**:
    - Salvarea modelului antrenat.
    - Crearea unui API (de ex. folosind Flask sau FastAPI) pentru a permite utilizarea modelului în timp real.
 
-2. **Integrarea Modelului în Aplicația Ta**:
+2. **Integrarea Modelului în Aplicație**:
    - Integrarea modelului de predicție în aplicația personală (de ex. HealthSync) pentru a oferi utilizatorilor predicții de preț.
 
 ### Pasul 7: Monitorizarea și Mentenanța Modelului
 1. **Monitorizarea Performanței**:
    - Monitorizarea continuă a performanței modelului în producție.
-   - Actualizarea periodică a modelului cu date noi pentru a menține acuratețea predicțiilor.
+   - Actualizarea periodică a modelului cu date noi pentru menținerea acurateței predicțiilor.
 
 ### Pasul 8: Documentarea Proiectului
 1. **Documentarea Procesului**:
-   - Documentează fiecare pas al proiectului, de la colectarea datelor până la implementarea și evaluarea modelului.
-   - Scrie un raport final care să includă metodologia, rezultatele și concluziile.
+   - Documentarea fiecărui pas al proiectului, de la colectarea datelor până la implementarea și evaluarea modelului.
+   - Scrierea unui raport final care să includă metodologia, rezultatele și concluziile.
 
 ### Resurse Suplimentare:
 - Tutoriale și documentații oficiale ale librăriilor de machine learning și deep learning.
-- Cursuri online despre predicția prețurilor acțiunilor și time series analysis.
+- Cursuri online despre predicția prețurilor acțiunilor și analiza seriilor temporale.
 
-Acesta este un ghid general, iar detaliile fiecărui pas pot varia în funcție de specificul proiectului tău și de datele pe care le folosești. Dacă ai nevoie de ajutor suplimentar în oricare dintre aceste etape, nu ezita să ceri detalii specifice!
+Acesta este un ghid general, iar detaliile fiecărui pas pot varia în funcție de specificul proiectului și de datele utilizate. 
 
 ## Tehnologii Folosite
-
-Pentru un proiect care prezice prețul unei acțiuni și oferă o interfață grafică atractivă, este esențial să alegi tehnologiile potrivite atât pentru partea de back-end, cât și pentru front-end. Iată recomandările pentru ambele părți ale aplicației:
 
 ### Back-End
 
@@ -90,7 +86,7 @@ Pentru un proiect care prezice prețul unei acțiuni și oferă o interfață gr
    - **SQLite**: O alternativă mai ușoară pentru proiectele mici sau în faza de prototip.
 
 5. **Colectarea Datelor**:
-   - **yfinance**: O librărie Python pentru a obține date financiare de pe Yahoo Finance.
+   - **yfinance**: O librărie Python pentru obținerea datelor financiare de pe Yahoo Finance.
    - **Alpha Vantage API**: Oferă date de piață în timp real și istorice.
 
 ### Front-End
@@ -111,16 +107,16 @@ Pentru un proiect care prezice prețul unei acțiuni și oferă o interfață gr
 ### Integrarea Back-End cu Front-End
 
 1. **Crearea API-urilor**:
-   - API-urile RESTful vor fi create folosind Flask sau FastAPI pentru a expune datele și predicțiile către front-end.
+   - API-urile RESTful sunt create folosind Flask sau FastAPI pentru a expune datele și predicțiile către front-end.
 
 2. **Comunicarea între Front-End și Back-End**:
-   - **Axios** sau **Fetch API**: Pentru a realiza cereri HTTP către API-uri din front-end.
+   - **Axios** sau **Fetch API**: Pentru realizarea cererilor HTTP către API-uri din front-end.
 
 ### Exemplu de Arhitectură
 
 1. **Server Back-End**:
    - Python cu Flask/FastAPI pentru API-uri.
-   - Modelul de predicție salvat folosind librăria corespunzătoare (pickle pentru Scikit-Learn sau TensorFlow Model Saving pentru TensorFlow).
+   - Modelul de predicție este salvat folosind librăria corespunzătoare (pickle pentru Scikit-Learn sau TensorFlow Model Saving pentru TensorFlow).
 
 2. **Front-End**:
    - React pentru interfața utilizator.
@@ -140,4 +136,14 @@ Pentru un proiect care prezice prețul unei acțiuni și oferă o interfață gr
 3. **Front-End**:
    - Creează un proiect React.
    - Conectează front-end-ul cu API-urile back-end folosind Axios/Fetch.
-   - Construiește componente pentru afișarea graficelor cu date
+   - Construiește componente pentru afișarea graficelor cu datele istorice și predicțiile folosind Chart.js/Recharts.
+
+4. **Integrarea și Testarea**:
+   - Asigură comunicarea corectă între front-end și back-end și afișarea corectă a datelor.
+   - Testează aplicația cu date reale și verifică acuratețea predicțiilor.
+
+5. **Deploy**:
+   - Back-end: Găzduit pe un serviciu cloud (de ex. Heroku, AWS).
+   - Front-end: Găzduit pe un serviciu de hosting static
+
+ (de ex. Netlify, Vercel).
